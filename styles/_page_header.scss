@@ -16,6 +16,17 @@
   margin: 10px 0;
 
   .section-subscribe {
+
+    button {
+      background: $background_color;
+      color: white;
+      border: 1px solid $low-contrast-border-color;
+
+      &:hover {
+        background-color: $low-contrast-border-color;
+      }
+    }
+
     @include tablet {
       margin-bottom: 0;
     }

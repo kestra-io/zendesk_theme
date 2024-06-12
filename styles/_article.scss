@@ -171,6 +171,10 @@
     margin: 10px 5px;
     min-width: 90px;
     width: auto;
+
+    &:hover {
+      background-color: $low-contrast-border-color;
+    }
   }
 
   &-more-questions {

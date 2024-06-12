@@ -62,7 +62,8 @@ a {
 
 input,
 textarea {
-  color: #000;
+  background-color: $background_color;
+  color: #FFF !important;
   font-size: $input-font-size;
 }
 
@@ -87,15 +88,24 @@ input[disabled] {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23CCC' d='M0 0h10L5 6 0 0z'/%3E%3C/svg%3E%0A")
-    no-repeat #fff;
   background-position: right 10px center;
   border: 1px solid $high-contrast-border-color;
   border-radius: 4px;
   padding: 8px 30px 8px 10px;
   outline: none;
-  color: $field-text-focus-color;
   width: 100%;
+
+  background: $background_color;
+  color: white;
+  
+  option {
+    background: $background_color;
+    color: white;
+  }
+
+  option:hover {
+    background-color: $hover_link_color;
+  }
 
   &:focus {
     border: 1px solid $brand_color;

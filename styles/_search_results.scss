@@ -33,11 +33,13 @@
       border-radius: 4px;
       padding: 10px 36px;
       margin-bottom: 4px;
-      color: $text_color;
+      background: $background_color;
+      color: white;
+      border: 1px solid $low-contrast-border-color;
 
       &:hover,
       &.current {
-        background-color: #e9ebed;
+        background-color: $low-contrast-border-color;
         text-decoration: none;
       }
     }
@@ -143,22 +145,20 @@
     padding-top: 4rem;
 
     .headline {
-      color: #2F3941;
+      color: white;
       font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
-      letter-spacing: -0.45px;
+      font-size: 18.4px;
+      line-height: 28px;
     }
 
     .action-prompt {
-      color: #68737D;
+      color: #B9B9BA;
       font-weight: 400;
       font-size: 14px;
-      line-height: 20px;
-      letter-spacing: -0.154px;
+      line-height: 22px;
 
       a {
-        color: $link_color;
+        color: #9CA1DE !important;
 
         &:visited {
           color: $link_color;

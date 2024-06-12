@@ -43,7 +43,7 @@
             {{t 'details_label'}}<span class="optional">({{t 'optional'}})</span>
           {{/label}}
         {{/required}}
-        {{wysiwyg 'details' aria-describedby="details-error-notification"}}
+        {{textarea 'details' aria-describedby="details-error-notification"}}
         {{#validate 'details'}}
           <div id="details-error-notification" class="notification notification-error notification-inline">
             {{error 'details'}}

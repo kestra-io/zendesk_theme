@@ -18,20 +18,26 @@
       margin: 0 15px 30px;
     }
 
-    border: 1px solid $brand_color;
-    border-radius: 4px;
+    background: #252526;
+    border: 1px solid #252526;
+    border-radius: 8px;
     box-sizing: border-box;
-    color: $brand_color;
+    color: #E1E1E1;
     display: flex;
     flex: 1 0 340px;
     margin: 0 0 30px;
     max-width: 100%;
     text-align: center;
 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+
     &:hover,
     &:focus,
     &:active {
-      background-color: $brand_color;
+      background-color: #252526;
+      border: 1px solid #650abe;
 
       * {
         color: $brand_text_color;
@@ -77,8 +83,12 @@
   }
 
   &-item-title {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     margin-bottom: 0;
     font-size: 16px;
+    line-height: 32px;
   }
 
   &-item-description {

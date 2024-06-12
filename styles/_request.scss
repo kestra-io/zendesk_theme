@@ -16,6 +16,10 @@
     }
   }
 
+  & input, & textarea {
+    background: $background_color;
+  }
+
   &-breadcrumbs {
     @include desktop { margin-bottom: 60px; }
     margin-bottom: 40px;
@@ -46,7 +50,8 @@
     .comment-show-container {
       border-radius: 2px;
       border: 1px solid $low-contrast-border-color;
-      color: $secondary-text-color;
+      color: white;
+      background: $background_color;
       text-align: inherit;
       padding: 8px 25px;
       width: 100%;
@@ -169,6 +174,11 @@
     }
   }
 
+  &-form input, &-form textarea  {
+    background: $background_color;
+    color: white;
+  }
+
   &-form textarea {
     min-height: 120px;
   }
@@ -176,4 +186,35 @@
   &-follow-up {
     padding-top: 20px;
   }
+}
+
+input[type="submit"][name="commit"] {
+  margin-bottom: 30px;
+  width: 160px;
+  height: 48px;
+  background: #650abe;
+  
+  &:hover {
+    border: 1px solid #650abe;
+  }
+}
+
+.form-field .nesty-input {
+  background: $background_color;
+  color: white;
+  
+  option {
+    background: $background_color;
+    color: white;
+  }
+
+  option:hover {
+    background-color: $hover_link_color;
+  }
+}
+
+:root {
+  --ck-color-base-background: $background_color !important;
+  --ck-color-text: white !important;
+  --ck-color-button-default-hover-background: $hover_link_color !important;
 }
