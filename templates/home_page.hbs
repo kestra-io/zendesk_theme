@@ -21,7 +21,16 @@
             <li class="blocks-item">
               <a href='{{url}}' class="blocks-item-link">
                   <div class="blocks-item-title">
-                    <img src="{{excerpt description}}" width="32">
+                    {{#is name 'General'}}<img src={{asset '1.png'}} width="32">{{/is}}
+                    {{#is name 'FAQ'}}<img src={{asset '3.png'}} width="32">{{/is}}
+                    {{#is name 'Release Notes'}}<img src={{asset '8.png'}} width="32">{{/is}}
+                  
+                    {{#is name 'Using the dashboard'}}<img src={{asset '2.png'}} width="32">{{/is}}
+                    {{#is name 'Reporting and analytics'}}<img src={{asset '3.png'}} width="32">{{/is}}
+                    {{#is name 'Subscription options'}}<img src={{asset '4.png'}} width="32">{{/is}}
+                    {{#is name 'Billing and payments'}}<img src={{asset '5.png'}} width="32">{{/is}}
+                    {{#is name 'Connect your account'}}<img src={{asset '6.png'}} width="32">{{/is}}
+                    
                     <span>{{name}}</span>
                   </div>
               </a>
@@ -31,7 +40,6 @@
               <li class="blocks-item">
                 <a href='{{url}}' class="blocks-item-link">
                   <div class="blocks-item-title">
-
                     {{#is name 'General'}}<img src={{asset '1.png'}} width="32">{{/is}}
                     {{#is name 'FAQ'}}<img src={{asset '3.png'}} width="32">{{/is}}
                     {{#is name 'Release notes'}}<img src={{asset '8.png'}} width="32">{{/is}}
